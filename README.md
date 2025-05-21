@@ -84,11 +84,17 @@ Group A   135  71.7  11.5    72
 Group B   135  74.4   8.68   76
 ```
 
+![taster_group_comparison](https://github.com/user-attachments/assets/10b72de2-af92-4716-bfb0-851277817bd3)
+
+
 My Wilcoxon rank-sum test yielded W = 7739 with p-value = 0.03221, indicating a statistically significant difference between the two groups' evaluations.
 
 **Findings:** I found that Group B consistently rated wines higher than Group A, with a higher median score (76 vs. 72) and lower standard deviation (8.68 vs. 11.5). The lower variability in Group B's scores suggests greater consistency among those evaluators, which I believe indicates more reliable assessments. The significant p-value (p < 0.05) confirms that this difference is unlikely due to chance.
 
 ### 4.2 Grape Classification by Chemical Indicators
+
+![correlation_heatmap](https://github.com/user-attachments/assets/fcde72f5-7c16-496e-9b31-62738147a894)
+
 
 My one-way ANOVA analysis comparing wine samples across grape grades showed highly significant differences (F = 19.42, p < 0.001). This confirms that the grading system I developed effectively differentiates grape quality based on chemical indicators.
 
@@ -112,6 +118,9 @@ Fructose g/L            Glucose g/L          0.8857
 Solid-acid ratio        Titratable acid (g/l) -0.8553
 Titratable acid (g/l)   Solid-acid ratio     -0.8553
 ```
+
+![scores_by_grade](https://github.com/user-attachments/assets/efdcb4fd-feff-4b4f-b1eb-511315a81eff)
+
 
 These correlations reveal the interconnected nature of wine composition. For example:
 
@@ -143,6 +152,13 @@ Solid-acid ratio    -0.3778254  0.1261424  -2.995  0.00287 **
 Multiple R-squared:  0.2419,	Adjusted R-squared:  0.2172 
 F-statistic: 9.796 on 17 and 522 DF,  p-value: < 2.2e-16
 ```
+
+
+![predicted_vs_actual](https://github.com/user-attachments/assets/6cf2f3ef-6b89-4dba-88a5-c196eeaa1921)
+
+
+![residual_diagnostics](https://github.com/user-attachments/assets/f42648bd-7568-4d4c-b9c2-abf10a9505e5)
+
 
 **Model Interpretation:**
 
